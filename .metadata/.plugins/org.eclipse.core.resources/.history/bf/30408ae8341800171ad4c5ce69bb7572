@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>20170403</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- 
+		서블릿 클래스의 객체를 만드는 과정 
+		서블릿 클래스 서블릿 이름 = new 서블릿 클래스()
+		결론적으로 서블릿 클래스의 객체를 만드는 것을 신경 쓰지 않아도 된다
+		<servlet> 
+		<servlet-name>서블릿 이름</servlet-name> 
+		<servlet-class>클래스 이름</servlet-class> 
+		</servlet> 
+		만들어진 서블릿 객체와 해당하는 서블릿을 사용하기위한 url을 매칭 시키는 과정
+		<servlet-mapping> 
+		<servlet-name>서블릿 이름</servlet-name> 
+		<url-pattern>서블릿 URL</url-pattern> 
+		</servlet-mapping>
+	-->
+	
+	<servlet>
+		<servlet-name>helloServlet</servlet-name>
+		<servlet-class>HelloServlt</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>helloServlet</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+</web-app>
