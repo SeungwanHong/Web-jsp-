@@ -9,26 +9,26 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//Å¬¶óÀÌ¾ğÆ®ÀÇ ¿äÃ»À» urlÀ» ÅëÇØ¼­ ¹Ş´Â´Ù.
-//¶§¹®¿¡ »ç¿ëÀÚÀÇ ¿äÃ»¿¡ ÇØ´çÇÏ´Â urlÀ» ÇØ´ç ¼­ºí¸´¿¡ ¸ÅÇÎ(Mapping)ÇÑ´Ù.
-//web.xml ¿¡¼­ ¼­ºí¸´°ú ÇØ´çÇÏ´Â urlÀ» ¸ÅÇÎ ÇÑ´Ù.
-//*¸ÅÇÎ : »ç¿ëÀÚ°¡ ~url À» ¿äÃ» ÇßÀ¸¸é ÇØ´ç ¼­ºí¸´ ±â´ÉÀ» »ç¿ëÇÏ°Ú´Ù~
+//í´ë¼ì´ì–¸íŠ¸ì˜ ìš”ì²­ì„ urlì„ í†µí•´ì„œ ë°›ëŠ”ë‹¤.
+//ë•Œë¬¸ì— ì‚¬ìš©ìì˜ ìš”ì²­ì— í•´ë‹¹í•˜ëŠ” urlì„ í•´ë‹¹ ì„œë¸”ë¦¿ì— ë§¤í•‘(Mapping)í•œë‹¤.
+//web.xml ì—ì„œ ì„œë¸”ë¦¿ê³¼ í•´ë‹¹í•˜ëŠ” urlì„ ë§¤í•‘ í•œë‹¤.
+//*ë§¤í•‘ : ì‚¬ìš©ìê°€ ~url ì„ ìš”ì²­ í–ˆìœ¼ë©´ í•´ë‹¹ ì„œë¸”ë¦¿ ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ê² ë‹¤~
 @WebServlet("/HelloServelt")
-//¿©±â¿¡ Àû¾î ³õÀ¸¸é url ¸ÅÇÎÀÌ ¾Ë¾Æ¼­ Ã³¸®µÈ´Ù.
+//ì—¬ê¸°ì— ì ì–´ ë†“ìœ¼ë©´ url ë§¤í•‘ì´ ì•Œì•„ì„œ ì²˜ë¦¬ëœë‹¤.
 public class HelloServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     public HelloServlet() {
         super();
     }
-    //¹«Á¶°Ç urlÀ» ÅëÇØ¼­(±âº»)
+    //ë¬´ì¡°ê±´ urlì„ í†µí•´ì„œ(ê¸°ë³¸)
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
 
-		System.out.println("HelloServlet È£Ãâ");
-		//Å¬¶óÀÌ¾ğÆ®¿¡°Ô ÀÀ´ä
+		System.out.println("HelloServlet í˜¸ì¶œ");
+		//í´ë¼ì´ì–¸íŠ¸ì—ê²Œ ì‘ë‹µ
 		response.setCharacterEncoding("EUC-KR");
-		//¼­ºí¸´¸¸ »ç¿ëÇÏ´ø ½ÃÀı
+		//ì„œë¸”ë¦¿ë§Œ ì‚¬ìš©í•˜ë˜ ì‹œì ˆ
 		PrintWriter pw = response.getWriter();
 		pw.append("<html>").append("<head>").append("<title>").append("hello").
 		append("</title>").append("</head>").append("<body>").

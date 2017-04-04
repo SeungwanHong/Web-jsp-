@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 //@WebServlet("/MyNameServlet")
-//¿©±â¿¡ Àû¾î ³õÀ¸¸é url ¸ÅÇÎÀÌ ¾Ë¾Æ¼­ Ã³¸®µÈ´Ù.
+//ì—¬ê¸°ì— ì ì–´ ë†“ìœ¼ë©´ url ë§¤í•‘ì´ ì•Œì•„ì„œ ì²˜ë¦¬ëœë‹¤.
 public class MyNameServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -21,9 +21,9 @@ public class MyNameServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setCharacterEncoding("EUC-KR");
 		PrintWriter myname = response.getWriter();
-		myname.append("<html>").append("<head>").append("<title>").append("¸¶ÀÌ³×ÀÓ").
+		myname.append("<html>").append("<head>").append("<title>").append("ë§ˆì´ë„¤ì„").
 		append("</title>").append("</head>").append("<body>").
-		append("<h1>È«½Â¿Ï</h1>").append("</body>").append("</html>");
+		append("<h1>í™ìŠ¹ì™„</h1>").append("</body>").append("</html>");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
