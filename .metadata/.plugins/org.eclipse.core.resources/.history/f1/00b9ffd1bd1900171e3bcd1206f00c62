@@ -1,0 +1,12 @@
+package swh.user.vo;
+
+//vo : value object ¶Ç´Â visual object
+//
+public class LoginVO {
+	String userId;
+	String UserName;
+	
+	
+	
+	
+}

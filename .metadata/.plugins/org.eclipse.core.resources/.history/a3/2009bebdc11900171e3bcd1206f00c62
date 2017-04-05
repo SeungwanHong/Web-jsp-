@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//WebContent/test05.jsp=UTF-8
+encoding//src/swh/controller/UserController.java=UTF-8
+encoding//src/swh/service/UserService.java=euc-kr
+encoding/<project>=euc-kr

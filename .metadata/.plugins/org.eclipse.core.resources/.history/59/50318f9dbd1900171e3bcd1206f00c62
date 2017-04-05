@@ -1,0 +1,8 @@
+package swh.user.vo;
+
+public class LoginVO {
+	String userId;
+	String UserName;
+	
+
+}

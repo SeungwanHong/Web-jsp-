@@ -1,0 +1,5 @@
+package swh.user.vo;
+
+public class LoginVO {
+
+}
