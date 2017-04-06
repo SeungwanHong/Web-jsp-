@@ -1,0 +1,5 @@
+package hsw.service;
+
+public class BoardService {
+
+}

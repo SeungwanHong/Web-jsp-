@@ -1,0 +1,6 @@
+package hsw.vo;
+
+public class LoginVo {
+	Userid
+	Username
+}

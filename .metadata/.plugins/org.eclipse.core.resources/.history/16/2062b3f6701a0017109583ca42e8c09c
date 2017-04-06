@@ -1,0 +1,5 @@
+package hsw.vo;
+
+public class UserVo {
+
+}

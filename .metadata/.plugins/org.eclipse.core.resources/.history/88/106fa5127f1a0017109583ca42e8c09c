@@ -1,0 +1,5 @@
+package hsw.vo.board;
+
+public class BoardVo {
+	
+}

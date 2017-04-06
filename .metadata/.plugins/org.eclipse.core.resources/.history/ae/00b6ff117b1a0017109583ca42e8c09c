@@ -1,0 +1,22 @@
+package hsw.service;
+
+import java.util.List;
+
+import hsw.dao.UserDao;
+import hsw.user.vo.UserVo;
+import hsw.vo.LoginVo;
+
+public class UserService {
+
+	
+	public LoginVo login(String id, String pw){
+		UserDao userDao = new UserDao();
+		LoginVo userVo = userDao.login(id, pw);
+		return userVo;
+	}
+	public List<UserVo> userList(){
+		List<UserVo> userList = null;
+		
+		return userList;
+	}
+}

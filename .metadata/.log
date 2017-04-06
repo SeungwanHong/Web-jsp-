@@ -789,3 +789,425 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
 	at java.lang.Thread.run(Unknown Source)
+!SESSION 2017-04-06 08:59:24.063 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-06 09:00:06.891
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bituser'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 09:08:31.579
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 09:08:31.585
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-04-06 09:13:51.358
+!MESSAGE Server Tomcat v8.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-04-06 09:15:12.079
+!MESSAGE Server Tomcat v8.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.ui 4 4 2017-04-06 09:30:39.089
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@3e5febe9)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@443e86ee)}
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 09:32:46.262
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 09:32:46.266
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jdt.core 4 4 2017-04-06 09:50:35.857
+!MESSAGE File not found: '/20170406/src/__2F_20170406_2F_WebContent_2F_error_2F_null_5F_error_2E_jsp.java'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/20170406/src/__2F_20170406_2F_WebContent_2F_error_2F_null_5F_error_2E_jsp.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1190)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:652)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1125)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jst.ws.jaxws.utils.clazz.ASTUtils.createCompilationUnit(ASTUtils.java:89)
+	at org.eclipse.jst.ws.jaxws.utils.internal.annotations.impl.AnnotationInspectorImpl.getCompilationUnit(AnnotationInspectorImpl.java:659)
+	at org.eclipse.jst.ws.jaxws.utils.internal.annotations.impl.AnnotationInspectorImpl.getSpecificAnnotationFromMember(AnnotationInspectorImpl.java:591)
+	at org.eclipse.jst.ws.jaxws.utils.internal.annotations.impl.AnnotationInspectorImpl.inspectType(AnnotationInspectorImpl.java:183)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.AbstractModelSynchronizer.processCompilationUnit(AbstractModelSynchronizer.java:116)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.OnEventModelSynchronizer.handleAddedCompilationUnit(OnEventModelSynchronizer.java:354)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.OnEventModelSynchronizer.recursevilyHandleCompilationUnits(OnEventModelSynchronizer.java:278)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.OnEventModelSynchronizer.recursevilyHandleCompilationUnits(OnEventModelSynchronizer.java:302)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.OnEventModelSynchronizer.recursevilyHandleCompilationUnits(OnEventModelSynchronizer.java:302)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.OnEventModelSynchronizer.handleChangedProject(OnEventModelSynchronizer.java:176)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.OnEventModelSynchronizer.elementChanged(OnEventModelSynchronizer.java:86)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1662)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1652)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1486)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1462)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:765)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5521)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-04-06 09:50:35.859
+!MESSAGE Resource '/20170406/src/__2F_20170406_2F_WebContent_2F_error_2F_null_5F_error_2E_jsp.java' does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2017-04-06 09:50:35.978
+!MESSAGE File not found: '/20170406/src/__2F_20170406_2F_WebContent_2F_example_2F_login_5F_failed_2E_jsp.java'
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/20170406/src/__2F_20170406_2F_WebContent_2F_example_2F_login_5F_failed_2E_jsp.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1190)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getContents(CompilationUnit.java:652)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1125)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:812)
+	at org.eclipse.jst.ws.jaxws.utils.clazz.ASTUtils.createCompilationUnit(ASTUtils.java:89)
+	at org.eclipse.jst.ws.jaxws.utils.internal.annotations.impl.AnnotationInspectorImpl.getCompilationUnit(AnnotationInspectorImpl.java:659)
+	at org.eclipse.jst.ws.jaxws.utils.internal.annotations.impl.AnnotationInspectorImpl.getSpecificAnnotationFromMember(AnnotationInspectorImpl.java:591)
+	at org.eclipse.jst.ws.jaxws.utils.internal.annotations.impl.AnnotationInspectorImpl.inspectType(AnnotationInspectorImpl.java:183)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.AbstractModelSynchronizer.processCompilationUnit(AbstractModelSynchronizer.java:116)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.OnEventModelSynchronizer.handleAddedCompilationUnit(OnEventModelSynchronizer.java:354)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.OnEventModelSynchronizer.recursevilyHandleCompilationUnits(OnEventModelSynchronizer.java:278)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.OnEventModelSynchronizer.recursevilyHandleCompilationUnits(OnEventModelSynchronizer.java:302)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.OnEventModelSynchronizer.recursevilyHandleCompilationUnits(OnEventModelSynchronizer.java:302)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.OnEventModelSynchronizer.handleChangedProject(OnEventModelSynchronizer.java:176)
+	at org.eclipse.jst.ws.jaxws.dom.runtime.persistence.sync.OnEventModelSynchronizer.elementChanged(OnEventModelSynchronizer.java:86)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1662)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1652)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1486)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1462)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:765)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5521)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-04-06 09:50:35.978
+!MESSAGE Resource '/20170406/src/__2F_20170406_2F_WebContent_2F_example_2F_login_5F_failed_2E_jsp.java' does not exist.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 10:20:04.620
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 10:20:04.626
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 11:20:26.101
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 11:20:26.106
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-04-06 12:21:21.722
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\rt.jar
+  [+] D:\hongsw\survlet\Board_20170406\WebContent\WEB-INF\lib\ojdbc6.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\annotations-api.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\catalina-ant.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\catalina-ha.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\catalina-storeconfig.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\catalina-tribes.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\catalina.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\ecj-4.6.1.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\el-api.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\jasper-el.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\jasper.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\jsp-api.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\servlet-api.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-api.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-coyote.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-dbcp.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-i18n-es.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-i18n-fr.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-i18n-ja.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-jdbc.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-jni.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-util-scan.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-util.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-websocket.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\websocket-api.jar
+  [+] D:\hongsw\survlet\Board_20170406\WebContent\WEB-INF\lib\ojdbc6.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2017-04-06 12:23:17.187
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Core Exception [code 275] A resource exists with a different case: '/Board_20170406/src/hsw/vo'.
+	at org.eclipse.jdt.internal.core.JavaModelOperation.createFolder(JavaModelOperation.java:293)
+	at org.eclipse.jdt.internal.core.CreatePackageFragmentOperation.executeOperation(CreatePackageFragmentOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:795)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.createPackageFragment(PackageFragmentRoot.java:302)
+	at org.eclipse.jdt.ui.wizards.NewTypeWizardPage.createType(NewTypeWizardPage.java:2091)
+	at org.eclipse.jdt.internal.ui.wizards.NewClassCreationWizard.finishPage(NewClassCreationWizard.java:65)
+	at org.eclipse.jdt.internal.ui.wizards.NewElementWizard$2.run(NewElementWizard.java:120)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5521)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:105)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Caused by: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/Board_20170406/src/hsw/vo'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:323)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:301)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:30)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.createFolder(JavaModelOperation.java:287)
+	at org.eclipse.jdt.internal.core.CreatePackageFragmentOperation.executeOperation(CreatePackageFragmentOperation.java:89)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:795)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.createPackageFragment(PackageFragmentRoot.java:302)
+	at org.eclipse.jdt.ui.wizards.NewTypeWizardPage.createType(NewTypeWizardPage.java:2091)
+	at org.eclipse.jdt.internal.ui.wizards.NewClassCreationWizard.finishPage(NewClassCreationWizard.java:65)
+	at org.eclipse.jdt.internal.ui.wizards.NewElementWizard$2.run(NewElementWizard.java:120)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5521)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:105)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2017-04-06 12:23:17.187
+!MESSAGE A resource exists with a different case: '/Board_20170406/src/hsw/vo'.
+
+!ENTRY org.eclipse.recommenders.rcp 4 18 2017-04-06 12:24:38.873
+!MESSAGE Failed to resolve selection in ‘=Board_20170406/src<hsw.user.vo{UserVo.java’ at offset 144.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromTypeRootInEditor(JavaElementSelections.java:164)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:119)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:102)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.handleSelectionInEditor(JavaElementSelectionService.java:108)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.access$1(JavaElementSelectionService.java:105)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService$1.run(JavaElementSelectionService.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-04-06 14:46:06.999
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\rt.jar
+  [+] D:\hongsw\survlet\Board2_20170406\WebContent\WEB-INF\lib\ojdbc6.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\annotations-api.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\catalina-ant.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\catalina-ha.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\catalina-storeconfig.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\catalina-tribes.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\catalina.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\ecj-4.6.1.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\el-api.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\jasper-el.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\jasper.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\jsp-api.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\servlet-api.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-api.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-coyote.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-dbcp.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-i18n-es.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-i18n-fr.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-i18n-ja.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-jdbc.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-jni.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-util-scan.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-util.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\tomcat-websocket.jar
+  [+] D:\hongsw\survlet\Servlet_JSP\tomcat\apache-tomcat-8.0.42-windows-x64\apache-tomcat-8.0.42\lib\websocket-api.jar
+  [+] D:\hongsw\survlet\Board2_20170406\WebContent\WEB-INF\lib\ojdbc6.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2017-04-06 15:46:13.785 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-06 15:46:28.095
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bituser'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-04-06 15:53:18.031
+!MESSAGE Full project indexing required:
+  [+] D:\hongsw\survlet\Board2_20170406\WebContent\WEB-INF\lib\ojdbc6.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 15:54:54.582
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 15:54:54.588
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 15:59:08.239
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 15:59:08.244
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 15:59:08.263
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-06 15:59:08.267
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-04-06 16:19:51.061
+!MESSAGE Server Tomcat v8.0 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+!SESSION 2017-04-06 16:20:24.197 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-06 16:20:35.013
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bituser'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-06 16:20:48.298
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v8.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-04-06 16:21:02.611
+!MESSAGE Server Tomcat v8.0 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+!SESSION 2017-04-06 16:24:46.961 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-06 16:25:04.199
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bituser'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-04-06 16:26:19.377
+!MESSAGE Server Tomcat v8.0 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.
+!SESSION 2017-04-06 16:26:29.405 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-06 16:26:38.790
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bituser'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-04-06 16:30:08.710
+!MESSAGE Server Tomcat v8.0 Server at localhost was unable to start within 45 seconds. If the server requires more time, try increasing the timeout in the server editor.

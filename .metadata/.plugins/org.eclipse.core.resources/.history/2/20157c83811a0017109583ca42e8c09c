@@ -1,0 +1,59 @@
+package hsw.vo.board;
+
+import java.sql.Date;
+
+public class BoardVo {
+	private int bidx;
+	private String title;
+	private String contents;
+	private String userId;
+	private Date writeDate;
+	private Date modDate;
+	private Date hitCnt;
+	public int getBidx() {
+		return bidx;
+	}
+	private stringToDate(){
+		
+	}
+	public void setBidx(int bidx) {
+		this.bidx = bidx;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getContents() {
+		return contents;
+	}
+	public void setContents(String contents) {
+		this.contents = contents;
+	}
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public Date getWriteDate() {
+		return writeDate;
+	}
+	public void setWriteDate(Date writeDate) {
+		this.writeDate = writeDate;
+	}
+	public Date getModDate() {
+		return modDate;
+	}
+	public void setModDate(Date modDate) {
+		this.modDate = modDate;
+	}
+	public Date getHitCnt() {
+		return hitCnt;
+	}
+	public void setHitCnt(Date hitCnt) {
+		this.hitCnt = hitCnt;
+	}
+	
+}

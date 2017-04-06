@@ -3,10 +3,23 @@
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.lang.Class"/>
 <fullyQualifiedTypeName name="swh.dao.UserDao"/>
-<fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="swh.service.UserService"/>
 <fullyQualifiedTypeName name="swh.user.vo.LoginVO"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
 <fullyQualifiedTypeName name="jdk.nashorn.internal.ir.RuntimeNode.Request"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.lang.StrictMath"/>
+<fullyQualifiedTypeName name="hsw.user.vo.UserVo"/>
+<fullyQualifiedTypeName name="hsw.vo.LoginVo"/>
+<fullyQualifiedTypeName name="hsw.dao.UserDao"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="hsw.vo.board.BoardVo"/>
+<fullyQualifiedTypeName name="javafx.scene.layout.Border"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="hsw.service.UserService"/>
+<fullyQualifiedTypeName name="hsw.vo.user.LoginVo"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 </qualifiedTypeNameHistroy>
