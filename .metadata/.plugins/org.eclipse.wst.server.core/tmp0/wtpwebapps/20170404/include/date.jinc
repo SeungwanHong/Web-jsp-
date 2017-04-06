@@ -1,5 +1,0 @@
-<%@ page import = "java.util.*" %>
-<%
-String incVar = "Having a good time";
-%>
-<%= start + new Date() + end %>

@@ -145,3 +145,33 @@
 4월 06, 2017 16:27:25.02 [1744:7280:0406/162725.022:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
 4월 06, 2017 16:28:27.62 [5292:2072:0406/162827.622:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
 4월 06, 2017 16:28:27.69 [5292:2072:0406/162827.692:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+
+4월 06, 2017 17:32:22.68 NEW SESSION
+4월 06, 2017 17:32:22.68 [4888:4860:0406/173222.688:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:32:22.83 [4888:4860:0406/173222.834:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:35:37.88 [2156:4300:0406/173537.887:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:35:37.98 [2156:4300:0406/173537.979:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:36:13.57 [4552:3312:0406/173613.573:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:36:13.66 [4552:3312:0406/173613.661:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:40:59.89 [2420:2996:0406/174059.894:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:40:59.98 [2420:2996:0406/174059.983:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:47:27.09 [4700:3456:0406/174727.099:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:47:27.18 [4700:3456:0406/174727.184:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:47:59.12 [1168:2384:0406/174759.124:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:47:59.21 [1168:2384:0406/174759.214:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:49:06.72 [8968:8972:0406/174906.728:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:49:06.78 [8968:8972:0406/174906.786:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:50:32.96 [148:3236:0406/175032.965:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:50:33.06 [148:3236:0406/175033.068:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:51:35.72 [6340:5664:0406/175135.727:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:51:35.83 [6340:5664:0406/175135.838:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:53:08.85 [9060:9072:0406/175308.849:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:53:08.93 [9060:9072:0406/175308.930:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:53:21.55 [968:5484:0406/175321.559:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:53:21.64 [968:5484:0406/175321.649:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:54:11.84 [7408:5240:0406/175411.845:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:54:11.93 [7408:5240:0406/175411.937:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:55:51.12 [5212:8088:0406/175551.127:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:55:51.21 [5212:8088:0406/175551.214:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 06, 2017 17:56:10.83 [7760:3192:0406/175610.837:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 06, 2017 17:56:10.88 [7760:3192:0406/175610.889:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477

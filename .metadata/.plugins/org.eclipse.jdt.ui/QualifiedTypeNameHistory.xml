@@ -19,7 +19,9 @@
 <fullyQualifiedTypeName name="hsw.vo.board.BoardVo"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.Border"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
-<fullyQualifiedTypeName name="hsw.service.UserService"/>
-<fullyQualifiedTypeName name="hsw.vo.user.LoginVo"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="javax.websocket.Session"/>
+<fullyQualifiedTypeName name="org.apache.catalina.Session"/>
+<fullyQualifiedTypeName name="hsw.vo.user.LoginVo"/>
+<fullyQualifiedTypeName name="hsw.service.UserService"/>
 </qualifiedTypeNameHistroy>

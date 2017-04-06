@@ -1,2 +1,7 @@
 1491456320939	Rename resource 'test.jsp'
 1491456700925	Rename resource 'boardContents.jsp'
+1491469150500	Move 'boardList.jsp' to 'form'
+1491469152276	Move 'boardContent.jsp' to 'form'
+1491469168680	Delete element
+1491469170278	Delete element
+1491469171708	Delete element
