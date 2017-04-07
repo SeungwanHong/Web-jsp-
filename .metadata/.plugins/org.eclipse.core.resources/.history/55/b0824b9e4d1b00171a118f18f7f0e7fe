@@ -1,0 +1,8 @@
+package hsw.comm;
+
+public class Controller {
+	public static final String CONTROLLER_MAIN = "/";
+	public static final String CONTROLLER_USER = "/user";
+	public static final String CONTROLLER_BOARD = "/";
+
+}

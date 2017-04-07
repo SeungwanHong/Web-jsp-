@@ -1,0 +1,50 @@
+package hsw.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import hsw.comm.Controller;
+import hsw.comm.Page;
+import hsw.comm.Url;
+import hsw.service.BoardService;
+import hsw.service.impl.BoardServiceImpl;
+
+@WebServlet(Controller.CONTROLLER_BOARD)
+
+public class BoardController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private BoardService boardService = new BoardServiceImpl();
+	
+       
+    public BoardController() {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String req_url = request.getPathInfo();
+		switch(req_url){
+		case Url.URI_BOARDLIST:
+			//뷰이동
+			dispatcher = request.getRequestDispatcher(Page.PAGE_USER_LOGIN);
+			dispatcher.forward(request, response);
+			response.sendRedirect(Page.PAGE_BOARD_LSIT);
+			//boardService.list();
+			break;
+		case Url.URI_BOARDCONTENT:
+			//페이지 이동
+			response.sendRedirect(Page.PAGE_BOARD_CONTENT);
+			//boardService.contents(1);
+			break;
+		}
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

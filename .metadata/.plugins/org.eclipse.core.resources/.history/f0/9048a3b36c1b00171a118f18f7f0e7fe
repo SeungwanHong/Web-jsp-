@@ -1,0 +1,27 @@
+<%@page import="hsw.comm.Key"%>
+<%@page import="hsw.comm.Url"%>
+<%@page import="hsw.vo.user.LoginVo"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>login page</title>
+</head>
+<body>
+<h1>여기는 로그인</h1>
+<% LoginVo loginVo = (LoginVo)session.getAttribute(Key.KEY_LOGIN_SESSION); %>
+	<% if(loginVo == null){ %>
+<form action="/user/loginchk" method="get">
+<input type="hidden" name="UserId" value="kim">
+<input type="hidden" name="UserPw" value="134">
+
+<input type="submit">
+<%}else{ %>
+	로그인 상태
+	<h1><a href="<%= Url.URL_FULL_LOGINOUT%>">LOGOUT</a></h1>
+<%} %>
+</form>
+</body>
+</html>

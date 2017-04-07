@@ -1,0 +1,14 @@
+package hsw.comm;
+
+public class Page {
+	
+	public static final String URL_LOGINPAGE_FORM = "/form/login_form.jsp";
+	public static final String URL_BOARDLIST_FORM = "/form/boardlist.jsp";
+	public static final String URL_BOARDCONTENT_FORM = "/form/boardcontnet.jsp";
+	public static final String LOGINPAGE = "/login_form.jsp";
+	
+	
+	
+	public static final String BOARDLSIT = "/boardList.jsp";
+	public static final String BOARDCONTENT = "/boardContent.jsp";
+}

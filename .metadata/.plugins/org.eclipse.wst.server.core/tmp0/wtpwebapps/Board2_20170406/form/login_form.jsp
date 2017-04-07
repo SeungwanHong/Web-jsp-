@@ -1,3 +1,5 @@
+<%@page import="hsw.comm.Key"%>
+<%@page import="hsw.comm.Url"%>
 <%@page import="hsw.vo.user.LoginVo"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
@@ -9,14 +11,17 @@
 </head>
 <body>
 <h1>여기는 로그인</h1>
-<% LoginVo loginVo = (LoginVo)session.getAttribute("LOGIN"); %>
- 	<% if(loginVo == null){ %>
-	<h1>로그인 하세요</h1>
-	<p>아이디</p>
-	<p>패스워드</p>
-	<%}else{ %>
-	<h1>보드리스트로 갑니다.</h1>
- 	<%} %>
+	<% if(session.getAttribute(Key.KEY_LOGIN_SESSION) == null){ %>
+	<%=request.getParameter("UserId") %>로 로그인 못함<br/>
+<form action="/user/loginchk" method="get">
+<input type="hidden" name="UserId" value="kim">
+<input type="hidden" name="UserPw" value="1234">
 
+<input type="submit">
+<%}else{ %>
+	로그인된 상태
+	<h1><a href="<%= Url.URL_FULL_LOGINOUT%>">LOGOUT</a></h1>
+<%} %>
+</form>
 </body>
 </html>

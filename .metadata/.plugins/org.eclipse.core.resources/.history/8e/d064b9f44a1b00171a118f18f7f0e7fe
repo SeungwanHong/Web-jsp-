@@ -1,0 +1,6 @@
+package hsw.comm;
+
+public class Controller {
+	private static final String CONTROLLER_MAIN = "/";
+
+}

@@ -5,3 +5,26 @@
 1491469168680	Delete element
 1491469170278	Delete element
 1491469171708	Delete element
+1491526153534	Rename type 'BoardDao'
+1491526159095	Rename type 'BoardDaoImple'
+1491526166021	Rename type 'BoardDaoImpleimple'
+1491526168675	Rename type 'UserDao'
+1491526190392	Move compilation unit
+1491526220277	Move compilation unit
+1491527637580	Rename type 'BoardService'
+1491527646006	Rename type 'BoardServiceimpl'
+1491527650902	Rename type 'UserService'
+1491527654288	Rename type 'UserServiceImple'
+1491527659058	Move compilation unit
+1491527704396	Move compilation unit
+1491539362867	Delete element
+1491544984129	Rename type 'Join'
+1491544988845	Rename type 'Login'
+1491544999915	Rename package 'hsw.dto'
+1491545182500	Rename type 'UserDaoimple'
+1491548522277	Rename resource 'boardList.jsp'
+1491549362984	Rename resource 'boardContent.jsp'
+1491550777938	Rename resource 'boardcontent.jsp'
+1491550782941	Rename resource 'board+content.jsp'
+1491550788445	Rename resource 'boardlist.jsp'
+1491550818340	Rename resource 'boar_dlist.jsp'

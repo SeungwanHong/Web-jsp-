@@ -1,0 +1,8 @@
+package hsw.dao;
+
+import hsw.vo.user.LoginVo;
+
+public interface UserDao {
+	
+	public LoginVo login(String id, String pw);
+}

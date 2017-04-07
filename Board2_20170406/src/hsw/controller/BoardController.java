@@ -1,40 +1,57 @@
 package hsw.controller;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-/**
- * Servlet implementation class BoardController
- */
-@WebServlet("/Board/")
+import hsw.comm.Controller;
+import hsw.comm.Key;
+import hsw.comm.Page;
+import hsw.comm.Url;
+import hsw.service.BoardService;
+import hsw.service.impl.BoardServiceImpl;
+
+@WebServlet(Controller.CONTROLLER_BOARD)
+
 public class BoardController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private BoardService boardService = new BoardServiceImpl();
+	RequestDispatcher dispatcher = null;
+	private HttpSession session;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
     public BoardController() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		session = request.getSession();
+		String req_url = request.getPathInfo();
+		if(session.getAttribute(Key.KEY_LOGIN_SESSION) != null){
+			switch(req_url){
+			case Url.URI_BOARDLIST:
+				//뷰이동
+				dispatcher = request.getRequestDispatcher(Page.PAGE_BOARD_LSIT);
+				dispatcher.forward(request, response);
+				//boardService.list();
+				break;
+			case Url.URI_BOARDCONTENT:
+				//페이지 이동
+				response.sendRedirect(Page.PAGE_BOARD_CONTENT);
+				//boardService.contents(1);
+				break;
+			}
+		}else{
+			response.sendRedirect(Url.URI_MAIN);
+		}
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 

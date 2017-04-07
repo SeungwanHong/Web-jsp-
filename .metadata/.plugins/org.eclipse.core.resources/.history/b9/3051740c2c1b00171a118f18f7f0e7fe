@@ -1,0 +1,14 @@
+package hsw.service;
+
+import hsw.dao.BoardDaoImpleimple;
+
+public class BoardService {
+	private BoardDaoImpleimple BoardDao = new BoardDaoImpleimple();
+	
+	public void list(){
+		
+	}
+	public void contents(int bindx){
+		
+	}
+}

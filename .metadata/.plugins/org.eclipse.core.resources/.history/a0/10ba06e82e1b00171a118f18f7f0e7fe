@@ -1,0 +1,5 @@
+package hsw.dao;
+
+public interface BoardDao {
+
+}

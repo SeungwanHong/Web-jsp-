@@ -1,0 +1,25 @@
+package hsw.comm;
+
+public class Url {
+	public static final String URI_MAIN = "/";
+	private static final String URI_USER = "/user";
+	private static final String URI_BOARD = "/board";
+	
+	public static final String URI_LOGINPAGE = "/login";
+	public static final String URI_LOGINCHECK = "/loginchk";
+	public static final String URI_LOGOUT = "/loginout";
+	
+	
+	public static final String URL_FULL_LOGIN = URI_USER + URI_LOGINPAGE;
+	public static final String URL_FULL_LOGINCHECK = URI_USER + URI_LOGINCHECK;
+	public static final String URL_FULL_LOGINOUT = URI_USER + URI_LOGOUT;
+	
+	public static final String URI_BOARDLIST = "/list";
+	public static final String URI_BOARDCONTENT = "/content";
+	
+	
+	
+	public static final String URL_FULL_BOARDLIST = URI_BOARD + URI_BOARDLIST; 
+	public static final String URL_FULL_BOARDCONTENT = URI_BOARD + URI_BOARDCONTENT;
+	
+}

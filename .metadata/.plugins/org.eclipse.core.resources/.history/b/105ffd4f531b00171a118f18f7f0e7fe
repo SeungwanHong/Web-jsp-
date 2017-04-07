@@ -1,0 +1,19 @@
+package hsw.comm;
+
+public class Url {
+	private static final String URL_USER = "/user";
+	private static final String URL_BOARD = "/board";
+	
+	public static final String URI_LOGINPAGE = "/login";
+	public static final String URI_LOGINCHECK = "/loginchk";
+	
+	public static final String URL_LOGINPAGE = "../form/login_form.jsp";
+	public static final String URL_FULL_LOGINPAGE = URL_USER + URI_LOGINPAGE;
+	public static final String URL_FULL_LOGINCHECK = URL_USER + URI_LOGINCHECK;
+	
+	public static final String URI_BOARDLIST = "/list";
+	public static final String URI_BOARDCONTENT = "/content";
+	
+	public static final String URL_FULL_BOARDLIST = URL_BOARD + URI_BOARDLIST; 
+	public static final String URL_FULL_BOARDCONTENT = URL_BOARD + URI_BOARDCONTENT;
+}

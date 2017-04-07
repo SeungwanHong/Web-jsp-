@@ -1,0 +1,13 @@
+package hsw.service.impl;
+
+import java.util.List;
+
+import hsw.dao.imple.BoardDaoImple;
+import hsw.dao.imple.UserDaoImple;
+import hsw.service.UserService;
+import hsw.vo.board.BoardVo;
+import hsw.vo.user.LoginVo;
+import hsw.vo.user.UserVo;
+
+public class UserServiceImpl implements UserService{
+}

@@ -1,0 +1,42 @@
+package hsw.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import hsw.comm.Controller;
+import hsw.comm.Url;
+import hsw.service.impl.BoardServiceImpl;
+import hsw.service.impl.UserServiceImpl;
+
+@WebServlet(Controller.CONTROLLER_BOARD)
+
+public class BoardController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private BoardServiceImpl boardService = new BoardServiceImpl();
+	
+       
+    public BoardController() {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String req_url = request.getPathInfo();
+		switch(req_url){
+		case Url.URI_BOARDLIST:
+			//boardService.list();
+			break;
+		case Url.URI_BOARDCONTENT:
+			boardService.contents(1);
+			break;
+		}
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}
