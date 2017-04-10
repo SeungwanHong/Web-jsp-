@@ -1,0 +1,6 @@
+package hsw.service;
+
+public interface BoardService {
+	public List<BoardVo> list();
+	public void contents(int bindx);
+}

@@ -1,0 +1,29 @@
+package kr.co.pjb.service;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import kr.co.pjb.board.vo.BoardListVO;
+import kr.co.pjb.board.vo.BoardVO;
+import kr.co.pjb.dao.BoardDao;
+
+public class BoardService {
+	
+	private BoardDao boardDao = new BoardDao();
+	
+	public List<BoardListVO> boardList() throws SQLException{
+		System.out.println("보드서비스의 버드리스트");
+		List<BoardListVO> boardList = boardDao.boardList();
+		System.out.println("보드서비스에서 보드리스트 값 받아왓음" + boardList.size());
+		
+		return boardList;
+	}
+	
+	public BoardVO board(int bidx) throws SQLException{
+		BoardVO boardVO = boardDao.board(bidx);
+		
+		return boardVO;
+		
+	}
+
+}

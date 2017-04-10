@@ -1,0 +1,29 @@
+package hsw.service;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import hsw.board.vo.BoardListVO;
+import hsw.board.vo.BoardVO;
+import hsw.dao.BoardDao;
+
+public class BoardService {
+	
+	private BoardDao boardDao = new BoardDao();
+	
+	public List<BoardListVO> boardList() throws SQLException{
+		System.out.println("���弭���� ���帮��Ʈ");
+		List<BoardListVO> boardList = boardDao.boardList();
+		System.out.println("���弭�񽺿��� ���帮��Ʈ �� �޾ƿ���" + boardList.size());
+		
+		return boardList;
+	}
+	
+	public BoardVO board(int bidx) throws SQLException{
+		BoardVO boardVO = boardDao.board(bidx);
+		
+		return boardVO;
+		
+	}
+
+}

@@ -1,0 +1,81 @@
+package hsw.controller;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import hsw.board.vo.BoardListVO;
+import hsw.board.vo.BoardVO;
+import hsw.comm.Controller;
+import hsw.comm.Page;
+import hsw.comm.Url;
+import hsw.service.BoardService;
+
+@WebServlet(Controller.CONTROLLER_BOARD)
+public class BoardController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private BoardService boardService = null;
+    public BoardController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+    public void init(ServletConfig config) throws ServletException {
+ 		try {
+ 			Class.forName("oracle.jdbc.driver.OracleDriver");
+ 		} catch (ClassNotFoundException e) {
+ 			e.printStackTrace();
+ 		}
+ 	}
+    
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String req_uri = request.getPathInfo();
+		System.out.println(req_uri);
+		try {
+			if(req_uri.equals(Url.URI_BOARDLIST)){
+				List<BoardListVO> boardList = new ArrayList<>();
+				boardService = new BoardService();
+				boardList = boardService.boardList();
+				System.out.println(boardList.size());
+				HttpSession session = request.getSession();
+				
+				RequestDispatcher dispatcher = request.getRequestDispatcher("/BoardList.jsp");
+				request.setAttribute("boardList", boardList);
+				dispatcher.forward(request, response);
+				
+			}else if(req_uri.startsWith(Url.URI_BOARD_CONTENT)){
+				String bidx = request.getParameter("bidx");
+				int bidx2 = Integer.parseInt(bidx);
+				
+				boardService = new BoardService();
+				BoardVO boardVO = new BoardVO();
+				boardVO = boardService.board(bidx2);
+				
+				RequestDispatcher dispatcher = request.getRequestDispatcher(Page.PAGE_BOARD_CONTENT);
+				request.setAttribute("board", boardVO);
+				dispatcher.forward(request, response);
+			}else if(req_uri.startsWith(Url.URI_BOARD_CONTENT)){
+			}else if(req_uri.startsWith(Url.URI_BOARD_CONTENT)){
+			}else if(req_uri.startsWith(Url.URI_BOARD_CONTENT)){
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

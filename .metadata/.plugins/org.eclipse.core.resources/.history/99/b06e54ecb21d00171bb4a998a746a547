@@ -1,0 +1,67 @@
+package kr.co.pjb.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JList;
+
+import kr.co.pjb.user.dto.LoginDTO;
+import kr.co.pjb.user.vo.LoginVO;
+import kr.co.pjb.user.vo.UserVO;
+
+//MVC 패턴
+
+// Model View Controller
+// 데이터 베이스에 접근하여 데이터를 조회,수정,삽입,삭제를 하는 역할
+
+//세상세상중요함
+//DAO : Data Access Object
+
+public class UserDao {
+
+	private static final String DB_URL = "jdbc:oracle:thin:@localhost:1521:orcl";
+	private static final String DB_USER = "pjb";
+	private static final String DB_PASSWORD = "pjb";
+
+	public LoginVO login(LoginDTO loginDTO) throws SQLException {
+
+		Connection conn = getConnection();
+		String sql = "SELECT USERID, USERNAME FROM TB_USER " + "WHERE USERID=? AND USERPW=?";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, loginDTO.getUserid());
+		pstmt.setString(2, loginDTO.getUserpw());
+
+		ResultSet login_rs = pstmt.executeQuery();
+		
+		LoginVO loginVO = null;
+		
+		//쿼리 조회 결과물이 있다면
+		if (login_rs.next()) {
+			//LoginVO의  객체를 만들어서 쿼리의 결과물을 넣어줄 준비
+			loginVO = new LoginVO();
+			
+			//조회된 결과물을 VO에 넣어준다
+			loginVO.setUserid(login_rs.getString("USERID"));
+			loginVO.setUsername(login_rs.getString("USERNAME"));
+		}
+		System.out.println("USERDAO의 loginVO : "+ loginVO);
+
+		login_rs.close();
+		pstmt.close();
+		conn.close();
+		
+		return loginVO;
+	}
+
+	private Connection getConnection() throws SQLException {
+		Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+		return conn;
+	}
+
+}

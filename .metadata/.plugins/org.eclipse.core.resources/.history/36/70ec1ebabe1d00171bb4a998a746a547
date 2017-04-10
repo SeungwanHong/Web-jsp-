@@ -1,0 +1,39 @@
+package kr.co.pjb.user.dto;
+
+
+//DTO : 컨트롤러에서 서비스로 값을 넘길때 조립해서 보낼 수 있게 하는 객체
+public class LoginDTO {
+	private String userid;
+	private String userpw;
+	
+	public LoginDTO(String userid, String userpw) {
+		super();
+		this.userid = userid;
+		this.userpw = userpw;
+	}
+
+	public String getUserid() {
+		return userid;
+	}
+
+	public void setUserid(String userid) {
+		this.userid = userid;
+	}
+
+	public String getUserpw() {
+		return userpw;
+	}
+
+	public void setUserpw(String userpw) {
+		this.userpw = userpw;
+	}
+
+	@Override
+	public String toString() {
+		return "LoginDTO [userid=" + userid + ", userpw=" + userpw + "]";
+	}
+	
+	
+
+	
+}

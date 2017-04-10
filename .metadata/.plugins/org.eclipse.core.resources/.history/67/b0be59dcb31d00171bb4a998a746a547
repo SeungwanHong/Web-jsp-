@@ -1,0 +1,16 @@
+package hsw.comm;
+
+public class Page {
+	
+	private static final String PAGE_BASE_DIR = "/form";
+	private static final String PAGE_USER_DIR = PAGE_BASE_DIR + "/user";
+	private static final String PAGE_BOARD_DIR = PAGE_BASE_DIR + "/board";;
+	
+	public static final String PAGE_MAIN = PAGE_BASE_DIR + "/main.jsp";
+	
+	public static final String PAGE_USER_LOGIN = PAGE_USER_DIR + "/login_form.jsp";
+	public static final String PAGE_USER_JOIN = PAGE_USER_DIR + "/join_form.jsp";
+	
+	public static final String PAGE_BOARD_LSIT = PAGE_BOARD_DIR + "/board_list.jsp";
+	public static final String PAGE_BOARD_CONTENT = PAGE_BOARD_DIR + "/board_content.jsp";
+}

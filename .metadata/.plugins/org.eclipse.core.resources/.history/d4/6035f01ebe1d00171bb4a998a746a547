@@ -1,0 +1,28 @@
+package hsw.service;
+
+import java.sql.SQLException;
+
+import hsw.dao.UserDao;
+import hsw.user.dto.LoginDTO;
+import hsw.user.vo.LoginVO;
+
+
+//���񽺴� Controller�� ȣ�� �Ѵ�.
+// Dao�� �ʼ������� ȣ���ؼ� �����ͺ��̽��� ���� �� �� �ְ� ���ְ�(��, DB�۾��� �ʿ� ���� ��쿡�� ȣ�� ���� �ʾƵ� ��)
+// �����Ͻ� ������ �ƴ� �ΰ����� ���񽺸� (ex: �˸�������, EMAIL, ���� ������ ���..)�� �����Ѵ�.
+public class UserService {
+	private UserDao userDao = new UserDao();
+	
+	public LoginVO login(LoginDTO loginDTO) throws SQLException{
+		System.out.println("userService�� �α���");
+		//����ڰ� �Է��� id, pw�� �̿��Ͽ� �α��� ������ ���´�
+		LoginVO loginVO = userDao.login(loginDTO);
+		System.out.println("???????");
+		//loginVO�� �̿��� �ΰ����� �۾����� �����Ѵ�.
+		// ex : �α��� ���� �˸� ������, ���� ������ ���...
+		return loginVO;
+	}
+	
+	
+
+}

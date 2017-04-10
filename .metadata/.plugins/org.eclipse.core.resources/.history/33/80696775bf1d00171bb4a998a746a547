@@ -1,0 +1,88 @@
+package hsw.dao.imple;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sun.corba.se.spi.orb.PropertyParser;
+
+import kr.co.pjb.board.vo.BoardListVO;
+import kr.co.pjb.board.vo.BoardVO;
+
+public class BoardDao {
+	
+	private static final String DB_URL = "jdbc:oracle:thin:@localhost:1521:orcl";
+	private static final String DB_USER = "pjb";
+	private static final String DB_PASSWORD = "pjb";
+	
+	public List<BoardListVO> boardList() throws SQLException{
+		Connection conn = getConnection();
+		System.out.println("����ٿ� ���帮��Ʈ");
+		String sql = "select bidx, title, userid, writedate, moddate, hitcnt from tb_board_demo "
+				+ "order by bidx desc";
+		
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		ResultSet rs = pstmt.executeQuery();
+		
+		List<BoardListVO> boardList = new ArrayList<>();
+		
+		
+		while(rs.next()){
+			BoardListVO boardListVO = new BoardListVO();
+			boardListVO.setBidx(rs.getInt("BIDX"));
+			boardListVO.setTitle(rs.getString("TITLE"));
+			boardListVO.setUserid(rs.getString("USERID"));
+			boardListVO.setWritedate(rs.getString("WRITEDATE"));
+			boardListVO.setModdate(rs.getString("MODDATE"));
+			boardListVO.setHitcnt(rs.getInt("HITCNT"));
+			
+			boardList.add(boardListVO);			
+		}
+		System.out.println(boardList.size());
+		rs.close();
+		pstmt.close();
+		conn.close();
+		System.out.println("����ٿ����� ���帮��Ʈ ������");
+		return boardList;
+	}
+	
+	public BoardVO board(int bidx) throws SQLException{
+		Connection conn = getConnection();
+		String sql = "select * from tb_board_demo where bidx=?";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setInt(1, bidx);
+		
+		ResultSet rs = pstmt.executeQuery();
+		
+		BoardVO boardVO = null;
+		
+		if(rs.next()){
+			boardVO = new BoardVO();
+			
+			boardVO.setBidx(rs.getInt("BIDX"));
+			boardVO.setTitle(rs.getString("TITLE"));
+			boardVO.setContents(rs.getString("CONTENTS"));
+			boardVO.setUserid(rs.getString("USERID"));
+			boardVO.setWritedate(rs.getString("WRITEDATE"));
+			boardVO.setModdate(rs.getString("MODDATE"));
+			boardVO.setHitcnt(rs.getInt("HITCNT"));
+			boardVO.setFilename(rs.getString("FILENAME"));
+			
+		}
+		rs.close();
+		pstmt.close();
+		conn.close();
+		
+		return boardVO;
+	}
+	
+	private Connection getConnection() throws SQLException {
+		Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+		return conn;
+	}
+
+}

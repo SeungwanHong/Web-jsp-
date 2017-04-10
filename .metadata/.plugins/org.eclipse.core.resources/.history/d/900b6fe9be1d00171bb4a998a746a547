@@ -1,0 +1,11 @@
+package hsw.dao;
+
+import java.util.List;
+
+import hsw.dao.imple.BoardListVO;
+import hsw.vo.board.BoardVo;
+
+public interface BoardDao {
+	public List<BoardVo> boardList();
+	public BoardVo boardContent(int bIndex);
+}
