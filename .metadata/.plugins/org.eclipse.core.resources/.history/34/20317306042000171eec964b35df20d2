@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 클래스 선택자 ( . ) -->
+<!-- 클래스 속성은 id와 다르게 여러가지 엘리먼트에 사용 가능하다 -->
+<!-- 공통적으로 적용해야 할 스타일을 지정한다 -->
+<style type="text/css">
+	.redcolor{
+		color:red;
+	}
+	.bluecolor{
+		color:blue;
+	}
+	.yellowbackground{
+		background-color: yellow;
+	}
+</style>
+</head>
+<body>
+<div class="redcolor yellowbackground"></div>
+<div class="bluecolor"></div>
+<p class="redcolor"></p>
+<p class="bluecolor"></p>
+</body>
+</html>

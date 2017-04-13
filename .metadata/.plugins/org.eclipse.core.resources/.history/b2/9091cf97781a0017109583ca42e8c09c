@@ -1,7 +1,0 @@
-package hsw.user.vo;
-
-public class UserVo {
-	private String userId;
-	private String userName;
-	private String email;
-}

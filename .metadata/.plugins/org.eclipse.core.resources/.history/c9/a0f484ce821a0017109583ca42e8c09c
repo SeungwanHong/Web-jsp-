@@ -1,7 +1,0 @@
-package hsw.service;
-
-import hsw.dao.BoardDao;
-
-public class BoardService {
-	BoardDao BoardDao = new BoardDao();
-}

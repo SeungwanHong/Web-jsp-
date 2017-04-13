@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- id속성 : html에서 유일한 엘리먼트를 판단 하기 위한 값 -->
+<!-- 
+시맨틱 마크업
+html5 이전에 사용하면 형태
+ -->
+	<div id="haeder">
+		<div id="nav">
+			해더에 올라가는 매뉴들 입니다.
+		</div>
+	</div>
+	<div id="contents">
+	</div>
+	<div id="">
+	</div>
+</body>
+</html>

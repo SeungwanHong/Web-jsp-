@@ -1,8 +1,0 @@
-package hsw.vo.board;
-
-public class BoardVo {
-	private int bidx;
-	private String title;
-	private String userId;
-	private String title;
-}

@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- HTML5를 시작 하겠다. -->
+<html>
+<head>	<!-- 사용자들에게 문서를 보여주기 전에 먼저 처리할 내용들이 들어간다. -->
+		<!-- CSS(Style), JavaScript(JQuery)등이 해당 -->
+
+<style type="text/css">
+	h1{
+		color:red;
+	}
+</style>		
+
+<meta charset="EUC-KR">	<!-- 문서의 환경 설정 -->
+<title>HTML 개요</title>	<!-- 제목표시줄 : 검색엔진에서 1순위로 검사 -->
+</head>
+<!-- body 엘리먼트 : 사용자들에게 보여줄 문서 -->
+<!-- body의 스타일을 바꾼다 : 문서 전체의 스타일을 지정 하겠다. -->
+<!-- style은 부모의 속성을 자식이 그대로 물려 받는다. -->
+<body style="color: blue; background-color: orange;">
+	
+	<!-- <엘리먼트> 텍스트  </엘리먼트> -->
+	<!-- 엘리먼트에 텍스트가 들어간다. 엘리먼트 : 태그(tag) -->
+	<!-- 엘리먼트에는 속성(Attribute)를 지정하여 엘리먼트마다 다른 속성을 가지게 할 수 있다. -->
+	<!-- id, class, name 등등이 대표적인 속성 -->
+	태그 적용 안된 텍스트
+	<h1 style="background-color: skyblue;">안녕하세요. 제목입니다.</h1>
+	<h1>또다른 h1 태그</h1>
+	<p> 안녕하세요 </p>
+	
+</body>
+</html>

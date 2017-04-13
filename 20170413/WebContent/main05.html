@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 표를 만들어 주는 table 태그 -->
+	<table border="1">
+		<caption>표의 제목</caption>
+		<!-- tr : 하나의 행 -->
+		<tr>
+			<!-- th : 컬럼의 제목 -->
+			<th>컬럼1</th>
+			<th>컬럼2</th>
+		</tr>
+		<tr>
+			<!-- td : 실제 데이터 -->
+			<td>내용1</td>
+			<td>내용2</td>
+		</tr>
+		<tr>
+			<td>내용3</td>
+			<td>내용4</td>
+		</tr>
+	</table>
+	
+	<table border="1">
+		<caption>표의 제목</caption>
+		<!-- tr : 하나의 행 -->
+		<tr>
+			<!-- th : 컬럼의 제목 -->
+			<th>컬럼1</th>
+			<th>컬럼2</th>
+			<th>컬럼3</th>
+			<th>컬럼4</th>
+		</tr>
+		<tr>
+			<!-- td : 실제 데이터 -->
+			<td colspan="3">내용1, 내용2, 내용3</td>
+			<td>내용4</td>
+		</tr>
+		<tr>
+			<td rowspan="3">내용5<br/>내용9<br/>내용13</td>
+			<td>내용6</td>
+			<td rowspan="2">내용7<br/>내용11</td>
+			<td>내용8</td>
+		</tr>
+		<tr>
+			<td>내용10</td>
+			<td>내용12</td>
+		</tr>
+		<tr>
+			<td>내용14</td>
+			<td colspan="2">내용15 내용 16</td>
+		</tr>
+	</table>
+	
+	<table border="1">
+		<caption>표의 제목</caption>
+		<!-- tr : 하나의 행 -->
+		<tr>
+			<td rowspan="2">1</td>
+			<td colspan="3">2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td rowspan="2">4</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td rowspan="2">7</td>
+			<td>8</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td colspan="2">10</td>
+		</tr>
+	</table>
+	
+	<!-- alt : 검색엔진에서 판단 할 수 있는 문자열 -->
+	<!-- 표준이기 때문에 반드시 넣어 줄 것	    -->
+	<!-- src : 이미지 경로가 들어간다. -->
+	<img src="Desert.jpg" alt="이미지 없을 때 나올 문자열(검색엔진에서 판단하는 문자열)" />
+<table border="1">
+
+	<tr>
+		<td rowspan="2">1</td>
+		<td colspan="3">2</td>
+		
+	</tr>
+	<tr>
+		<td>3</td>
+		<td rowspan="2">4</td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td rowspan="2">7</td>
+		<td>8</td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td colspan="2">10</td>
+	</tr>
+</table>
+
+</body>
+</html>

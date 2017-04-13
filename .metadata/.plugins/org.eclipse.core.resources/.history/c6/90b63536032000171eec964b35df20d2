@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+#div1{
+	color : blue;
+}
+#test{
+	color: gray;
+	font-size: 30px;
+}
+</style>
+</head>
+	<!--
+		p 태그 3개만들고 하나만 아이디를 p1으로 지정  p1아이디를 가진 아이만 글꼴 색상변경 
+	 -->
+<body>
+	<div id="div1">
+		<h1>div1</h1>
+	</div>
+	<div id="div2">
+		<h1>div2</h1>
+	</div>
+	<div id="div3">
+		<h1>div3</h1>
+	</div>
+	<p id="test">test</p>
+	<p>test</p>
+	<p>test</p>
+</body>
+</html>

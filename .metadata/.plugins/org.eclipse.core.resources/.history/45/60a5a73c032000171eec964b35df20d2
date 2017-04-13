@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+/* id 선택자 */
+	/* #으로 시작해서 지정한다. */
+	/* #id값 */
+	/* 요소의 크기나 위치 등 레이아웃을 지정할 때 주로 사용 */
+	/* 문서 안에서 한번만 적용 */
+	#div1{
+		color:blue;
+	}
+	/* p 태그를 3개 만들고 하나만 아이디를 p1로 지정 후 p1아이디를 가진 스타일의 글씨 색상 변경 하기 */
+#test{
+	color: gray;
+	font-size: 30px;
+}
+</style>
+</head>
+	<!--
+		p 태그 3개만들고 하나만 아이디를 p1으로 지정  p1아이디를 가진 아이만 글꼴 색상변경 
+	 -->
+<body>
+<!-- id속성 : html 문서 전체에서 하나만(유니크한) 값을 부여 -->
+	<!-- id는 하나의 html 문서에서 겹치면 안된다. -->
+	<div id="div1">
+		<h1>div1</h1>
+	</div>
+	<div id="div2">
+		<h1>div2</h1>
+	</div>
+	<div id="div3">
+		<h1>div3</h1>
+	</div>
+	<p id="test">test</p>
+	<p>test</p>
+	<p>test</p>
+</body>
+</html>

@@ -1,5 +1,0 @@
-package swh.service;
-
-public class UserService {
-	private UserDao userDao = new UserDao();
-}

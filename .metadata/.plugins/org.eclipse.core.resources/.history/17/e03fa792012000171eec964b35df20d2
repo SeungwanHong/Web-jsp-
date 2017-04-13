@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>CSS 기본</title>
+<!-- CSS는 head 태그 내부에 <style></style> 로 만든다. -->
+
+<!-- Style Sheet Field -->
+<!-- 현재 문서에서 사용 할 CSS를 지정 -->
+<style type="text/css">
+	/*
+		CSS의 구조
+		선택자{
+			스타일속성 : 속성값;
+			스타일속성 : 속성값;
+			스타일속성 : 속성값;
+		}
+	*/
+	
+	/*
+		CSS 특징 : 부모의 스타일 속성이 변경되면 자식의 스타일 속성도 변경된다.
+	*/
+	
+	/*태그 선택자를 이용한 CSS*/
+	/* body내의 모든 <p> 태그의 속성을 지정한다.*/
+	p{
+		background-color: gray;
+		color : white;
+	}
+	
+	div{
+		background-color: skyblue;
+		color : red;
+	}
+</style>
+
+</head>
+<body>
+	
+	<p> p 태그를 사용한 문단 입니다 </p>
+	
+	<div>
+		<span>span 태그를 사용한 문장입니다.</span>
+		<h1>h1 태그를 사용한 제목 입니다.</h1>
+	</div>
+</body>
+</html>
