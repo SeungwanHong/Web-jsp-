@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+span{
+	background-color: gray;
+	display: block;
+}
+div{
+	background-color: gray;
+	display: inline;
+}
+li{
+	background-color: gray;
+	display: inline;
+}
+</style>
+</head>
+<body>
+
+	<span>여기는 span</span>
+	hello~
+	<div>여기는 div</div>
+	hello~
+	<ul>
+		<li>test1</li>
+		<li>test2</li>
+		<li>test3</li>
+		<li>test4</li>
+	</ul>
+</body>
+</html>

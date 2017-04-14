@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		width: 100px;
+		height: 40px;
+		background-color: skyblue;
+		display: inline-block;;
+		text-align: center;
+		padding-top: 10px;
+	}
+	div:FIRST-CHILD {
+		border-top-left-radius: .5em;
+		border-bottom-left-radius: .5em;
+	}
+	div:LAST-CHILD {
+		border-top-left-radius: .5em;
+		border-bottom-left-radius: .5em;
+	}
+</style>
+</head>
+<body>
+	<div>home</div><div>뉴스</div><div>웹툰보기</div><div>test</div>
+</body>
+</html>

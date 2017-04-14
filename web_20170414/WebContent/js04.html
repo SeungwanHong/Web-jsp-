@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var pop = window.open(	"http://www.naver.com",
+							"popup",
+							"width=300,height=400,left=300,top=10,scrollbars=no,toolbars=no,location=no");
+
+	//이벤트 수행 시 작동할 함수 정의
+	function movePopupWindow(){
+		pop.moveTo(200,100);
+		pop.focus();
+	}
+	
+	function resizePopupWindow(){
+		pop.resizeTo(200, 300);
+		pop.focus();
+	}
+</script>
+</head>
+<body>
+	<button onclick="movePopupWindow()">브라우저 창 위치 변경(moveTo)</button>
+	<button onclick="resizePopupWindow()">브라우저 창 크기 변경(resizeTo)</button>
+</body>
+</html>

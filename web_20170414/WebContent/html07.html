@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+#cont1 {
+	background-color: aqua;
+}
+
+#cont2 {
+	background-color: orange;
+}
+
+#cont3 {
+	background-color: silver;
+}
+
+/* inline-block : 해당 요소는 inline으로 처리 */
+/* 				     내부 요소는 block 처럼 처리*/
+
+/* div에 display:inline 사용 시 div 내부 블록들은 각각의 특성(block, inline)을 유지하기 때문에*/
+/* 왼쪽부터 배치하겠다 라는 뜻의 float:left와 같이 사용 해야 한다. */
+
+div {
+	/* div의 정렬을 왼쪽부터 */
+	float:left;		
+	display : inline;
+	/* display:inline-block; */
+	width: 200px;
+	height: auto;
+	margin: 10px 5px;	/* 외부 여백 */
+	padding: 5px;		/* 내부 여백 */
+	border: 1px solid black;
+}
+</style>
+
+</head>
+<body>
+	<div id="cont1">
+		<section>
+			<h1>뉴스기사 1</h1>
+			<article>
+			원내 5당 대선후보들은 13일 한국기자협회·SBS가 주최한 첫 토론회에서 상대 후보의
+			‘약한 고리’를 집중적으로 파고들며 일진일퇴의 공방을 벌였다. 더불어민주당 문재인 후보는 법인세 증세 문제로 바른정당
+			유승민·정의당 심상정 후보로부터 ‘좌우 협공’을 당했다. 11차례 진행된 당 경선 토론회에서 이재명 성남시장에게 공격 당한
+			상황이 되풀이된 것이다.
+			</article>
+		</section>
+	</div>
+	<div id="cont2">
+		<section>
+			<h1>뉴스기사 2</h1>
+			<article>
+				심 후보는 문 후보를 향해 “복지공약 총액이 얼마냐”고 물은 뒤 “(지난 총선 기준으로 문
+				후보 공약을 재원으로 환산하면) 50조원 부도가 예정된 공약을 발표한 것이다. 증세 이야기도 안 한다”고 했다.
+			</article>
+		</section>
+	</div>
+
+	<div id="cont3">
+		<section>
+			<h1>뉴스기사 3</h1>
+			<article>
+				국민의당 안철수 후보는 고고도미사일방어체계(사드) 배치에 대한 입장 변화를 두고 집중
+				공격을 받았다. 특히 ‘안보는 보수’로 안 후보와 비슷한 기조인 유 후보가 몰아세웠다. 유 후보는 안 후보에게 “사드
+				반대에서 찬성으로 입장을 선회했다”며 “지도자는 소신과 철학에 일관성이 있어야 한다”고 지적했다. 유 후보는 이어 “정부
+				간 합의는 존중해야 한다”는 입장인 안 후보에게 “한·일 위안부 합의도 지켜야 하느냐”고 쉴 틈 없이 따졌다.
+			</article>
+		</section>
+	</div>
+
+</body>
+</html>

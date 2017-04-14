@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		The Apache Tomcat® software is an open source 
+		implementation of the Java Servlet, JavaServer Pages, 
+		Java Expression Language and Java WebSocket technologies. 
+		The Java Servlet, JavaServer Pages, Java Expression Language 
+		and Java WebSocket specifications are developed 
+		under the Java Community Process.
+	</div>
+		The Apache Tomcat software is developed in an open 
+		and participatory environment and 
+		released under the Apache License version 2. 
+		The Apache Tomcat project is intended 
+		to be a collaboration of the best-of-breed developers 
+		from around the world. We invite you to participate 
+		in this open development project. To learn more 
+		about getting involved, click here.
+	<div>
+	</div>
+	<div>
+	</div>
+</body>
+</html>

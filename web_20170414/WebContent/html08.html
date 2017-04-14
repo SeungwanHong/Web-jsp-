@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style type="text/css">
+	body{
+		width:800px;
+		height:3000px;
+		border:1px solid red;
+		margin: auto;
+		margin-top: 50px;
+	}
+	
+	div{
+		width:150px;
+		height:150px;
+		background-color: skyblue;
+		border:1px solid gray;
+	}
+	/*
+		position:relative static요소(기본 문서)의 흐름에 영향을 받는다.
+		부모의 기준으로 자연스럽게 배치가 된다.
+	*/
+	#rel_div{
+		top: 100px;
+		left: 100px;
+		position: relative;
+	}
+	/*
+		position:absolute : 부모의 위치가 지정이 되어 있으면(top, left의 값이 설정 되어 있으면)
+							부모의 위치에 영향을 받고, 부모의 위치가 지정이 안되어 있으면 브라우저 기준으로
+							왼쪽 위(left, top)을 기준으로 배치가 된다.
+							일반 position:static의 영향을 받지 않는다.
+	*/
+	#abs_div{
+		top:100px;
+		left:100px;
+		position:absolute;
+	}
+	/*
+		position:fixed : 브라우저에 지정된 좌표로 고정(스크롤과 연관 없음)
+	*/
+	#fix_div{
+		top:450px;
+		left:100px;
+		position:fixed;
+	}
+	
+</style>
+
+</head>
+<body>
+	<div> div 1 - static</div>
+	<div id="rel_div"> div 2 - relative</div>
+ 	<div id="abs_div"> div 3 - absolute</div>
+	<!-- <div id="fix_div"> div 4 - fixed</div>  -->
+	<div> div 5 - static</div>
+</body>
+</html>

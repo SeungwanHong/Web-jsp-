@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	alert("경고창임");
+	//BOM 구조에서 제일 최상위 객체인 window
+	// 브라우저 전체를 담당한다.
+	// 브라우저 에서 사용 할 수 있는 기능을 담아놓은 객체임
+	//창열기, 창 위치 변경하기, 경고창 띄우기(alert), 질의응답창(prompt) 띄우기 등등..
+	// window(창)에 관련된 기능들이 존재한다.
+	
+	window.open("http://naver.com",
+				"popup1",
+				"width=400, height=500, left=50, top=10, scrollbars=no, toolbars=no, location=no");
+	//open에 들어가는 속성
+	// width : 창의 너비
+	// height : 창의 높이
+	// left : 창의 수평위치(x좌표)
+	// top : 창의 수직 위치(y좌표)
+	// location : 주소 입력창 표시 여부(yes = 표시, no = 표시 안함)
+	// status : 창의 상태 영역 노출 여부(yes = 표시, no = 표시 안함)
+	// scrollbars : 창의 스크롤 막대 표시 여부(yes = 표시, no = 표시 안함)
+	// toolbars : 창의 툴바 노출 여부(yes = 표시, no = 표시 안함)
+	
+	// alert  : 단순 경고창
+	// prompt : 질의 응답창
+	// confirm : 확인, 취소창
+	var isOk = window.confirm("확인 취소?")
+	alert(isOk);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

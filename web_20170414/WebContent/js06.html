@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style type="text/css">
+	div{
+		width:100px;
+		height:100px;
+	}
+</style>
+<!-- 
+	JavaScript의 이벤트란
+	1) Browser 상의 이벤트
+	2) 문서상의 이벤트 (Document의 이벤트가 훨씬 더 많이 사용된다.)
+	
+	브라우저 상의 이벤트는 대부분 window.on~~~~로 시작된다.
+	문서상의 이벤트는 대부분 요소를 의미하며, 요소.on~~~~로 시작 된다.
+	
+	* 이벤트란 ~ 할 때 발생될 작업을 지정하는 것을 의미한다.
+	ex) 버튼을 클릭 했을 때, 마우스가 div위에 올라왔을 때, 마우스가 div에서 나갔을 때 등등..
+	
+	결과적으로 이벤트가 발생 했을 때의 function을 만들어 지정한다.
+	보통 이벤트의 함수의 인자에 function이 들어간다.
+ -->
+</head>
+<body>
+	<div id="cont1">
+		안녕하세요
+	</div>
+	
+	<!-- 해당 버튼을 사용자가 클릭하면 button1Click()을 실행하라 -->
+	<button onclick="button1Click()"> 색 바꾸기1 </button>
+	
+	<!-- 해당 버튼을 사용자가 클릭하면 button2Click()을 실행하라 -->
+	<button onclick="button2Click()"> 색 바꾸기2 </button>
+
+<script type="text/javascript">
+	var cont_div = document.getElementById("cont1");
+	function button1Click(){
+		cont_div.style.backgroundColor = "red";
+	}
+	function button2Click(){
+		cont_div.style.backgroundColor = "green"
+	}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

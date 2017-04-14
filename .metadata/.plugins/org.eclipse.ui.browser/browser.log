@@ -225,3 +225,9 @@
 4월 13, 2017 15:29:39.37 A Parser-blocking, cross site (i.e. different eTLD+1) script, http://cm.interworksmedia.co.kr/adTagRequest.htm?mediaId=zdnet&newsId=20170228131816&site=www.zdnet.interplay&page=zdnet_news&position=x90&tagId=JX&scriptId=iwmads-cm-1492064979250, is invoked via document.write. This MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message.See https://www.chromestatus.com/feature/5718547946799104 for more details.
 4월 13, 2017 15:29:39.38 A Parser-blocking, cross site (i.e. different eTLD+1) script, http://ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/www.zdnet.interplay/zdnet_news@x90?_4022&_5382&_5383&_5412&_5475, is invoked via document.write. This MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message.See https://www.chromestatus.com/feature/5718547946799104 for more details.
 4월 13, 2017 17:41:35.76 A Parser-blocking, cross site (i.e. different eTL[4992:660:0413/174135.765:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+
+4월 14, 2017 10:41:16.55 NEW SESSION
+4월 14, 2017 10:41:16.55 [9292:9744:0414/104116.550:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+4월 14, 2017 10:41:16.63 [9292:9744:0414/104116.631:ERROR:mf_helpers.cc(12)] Error in dxva_video_decode_accelerator_win.cc on line 477
+4월 14, 2017 14:29:18.97 [5168:8452:0414/142918.742:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.
+4월 14, 2017 15:47:50.78 [5168:8452:0414/154750.744:ERROR:gcm_channel_status_request.cc(89)] GCM channel request failed.

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>JavaScript</title>
+	<!-- <script type="text/javascript">
+	
+		var age = prompt("Your age", "0");
+		if(age >= 20){
+			document.write("20살 이상입니다.");
+		}else{
+			document.write("20살 미만입니다.");
+		}
+		
+	</script> -->
+	<!-- 외부 자바스크립트 불러오기 (일반적으로 많이 사용한다)-->
+	<script type="text/javascript" src="js/js01.js"></script>
+	<script type="text/javascript">
+		//자바스크립트는 변수의 형태가 없다.
+		//var 변수명
+		var num1 = 10;
+		var num2 = "10";
+		
+		var str1 = "Hello";
+		alert(num1+str1);
+		
+		// ==  -> 값만 비교
+		// === -> 값과 타입까지 비교
+		alert(num1 == num2);	//true 
+		alert(num1 === num2);	//false
+		
+		for(var i = 2; i < 10; i++){
+			document.write(i+"단<br/>");
+			for(var j = 1; j < 10; j++){
+				document.write(i + "*" + j + "=" + (i*j)+"<br/>");
+			}
+			document.write("<br/>")
+		}
+		
+		alert(goo("소민호"));
+		
+	</script>
+</head>
+<body>
+	<!-- 외부 자바스크립트에 저장된 함수 사용하기 -->
+	<script type="text/javascript">foo("안녕")</script>
+	<h1>hello</h1>
+	<h1>world</h1>
+</body>
+</html>

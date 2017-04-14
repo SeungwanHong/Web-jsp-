@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//객체 만들기
+	var TV = new Object();
+	
+	TV.off  = function(name){ alert(name + " TV 끄기"); }
+	TV.on   = function(name){ alert(name + " TV 켜기"); }
+	TV.name = "SAMSUNG";
+	
+	TV.on(TV.name);
+	TV.off(TV.name);
+</script>
+
+<script type="text/javascript">
+	//주의 할점 : Month-1이 기본이다.(컴퓨터에는 0월 ~ 11월까지 존재한다.)
+	var date1 = new Date();
+	var date2 = new Date("2017/5/14");
+	var date3 = new Date("2017,4,14");
+	
+	alert("date1 : " + 
+			date1.getFullYear() + " " + 
+			(date1.getMonth()+1) + " "
+			+ date1.getDate());
+	
+	alert("date2 : " + 
+						date2.getFullYear() + " " + 
+						date2.getMonth() + " "+ 
+						date2.getDate());
+	
+	alert("date3 : " + date3.getFullYear() + " " + (date3.getMonth()+1) + " "
+			+ date3.getDate());
+	
+	alert(date1.getTime());	//1970년 1월 1일부터 경과된 시간을 밀리초로
+	alert(date1.toDateString());
+	alert(date1.getHours()+ ":"+date1.getMinutes()+":"+date1.getSeconds());
+	
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>
